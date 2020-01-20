@@ -1,0 +1,1 @@
+SQL> create  table Layered_Employee (eno number(5) primary key,ename varchar2(20),eadd varchar2(20),desg varchar2(20),basicSalary number(10,2),grossSalary number(10,2),netSalary number(10,2));

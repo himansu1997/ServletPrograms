@@ -1,0 +1,101 @@
+
+<h1 style="color:red;text-align:center">Html servlet Communication using all types of form comps</h1>
+
+<form action="formurl"   method="GET">
+    <table  border="0"  bgcolor="cyan">
+       <tr>
+             <td>Person name :: </td>
+             <td> <input type="text"  name="pname"></td>
+       </tr>
+         <tr>
+             <td>Person age :: </td>
+             <td> <input type="password"  name="page"></td>
+       </tr>
+       <tr>
+             <td>Person Email :: </td>
+             <td> <input type="email"  name="email"></td>
+       </tr>
+       <tr>
+             <td>Person PhoneNumber :: </td>
+             <td> <input type="tel"  name="phone"></td>
+       </tr>
+       <tr>
+             <td>Address:: </td>
+             <td>
+                 <textarea  name="addrs" rows="5" cols="10">
+                        enter address
+                 </textarea>
+             </td>
+       </tr>
+       
+       <tr>
+             <td>Gender:: </td>
+             <td>
+                 <input type="radio"  name="gen"  value="M"> Male &nbsp;
+                 <input type="radio"  name="gen"  value="F"  checked> FeMale &nbsp;
+             </td>
+       </tr>
+       <tr>
+             <td>Marital Status:: </td>
+             <td>
+                 <input type="checkbox"  name="ms"  value="married"> Married &nbsp;
+             </td>
+       </tr>
+       
+        <tr>
+             <td>DAte of Birth:: </td>
+             <td>
+                 <input type="date"  name="dob" >
+             </td>
+       </tr>
+       <tr>
+             <td>Favorite Color:: </td>
+             <td>
+                 <input  type="color" name="color">
+             </td>
+       </tr>
+        <tr>
+             <td>Qualification:: </td>
+             <td>
+                 <select name="qlfy">
+                     <option value="engg" selected="selected">B.E/B.Tech</option>
+                     <option value="medico">MBBS</option>
+                     <option value="Mgmt">BBA/MBA</option>
+                     <option value="commerce">B.Com/M.Com</option>
+                 </select>
+             </td>
+       </tr>
+        <tr>
+             <td>Courses</td>
+             <td>
+                 <select name="courses"  multiple>
+                     <option value="java" selected="selected">Java pkg</option>
+                     <option value=".net">.NET</option>
+                     <option value="ds">DataScience</option>
+                     <option value="oracle">OraclePkg</option>
+                 </select>
+             </td>
+       </tr>
+        <tr>
+             <td>Hobies</td>
+                
+             <td>
+                <input type="checkbox" name="hb" value="sleep" checked="checked">Medidation  &nbsp;&nbsp;
+                <input type="checkbox" name="hb" value="reading">Reading Books  &nbsp;&nbsp;
+                <input type="checkbox" name="hb" value="travelling">AirForce  &nbsp;&nbsp;
+                <input type="checkbox" name="hb" value="cooking">Cooking  &nbsp;&nbsp;
+             </td>
+       </tr>
+        <tr>
+             <td>Website URL</td>
+                
+             <td>
+                  <input type="url" name="url">
+             </td>
+       </tr>
+        <tr>
+             <td><input type="reset"  value="reset"/></td>
+             <td> <input type="submit" value="submit"></td>
+       </tr>
+    </table>
+</form>

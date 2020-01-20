@@ -1,0 +1,33 @@
+
+
+<h1 style="color:red;text-align:center">Working with Multiple Submit Buttons and hyperlinks</h1>
+
+<form name="frm" action="processurl"  method="POST"  >
+     value1: <input type="text" name="t1"> <br>
+     value2: <input type="text" name="t2"> <br>
+     <input type="hidden"  name="source"/>
+     <input type="button"  value="plus" onclick="send(this.value)">
+     <input type="button"  value="minus" onclick="send(this.value)">
+      <input type="button"  value="multiply" onclick="send(this.value)">
+      <input type="button"  value="div" onclick="send(this.value)" ><br>
+      <a href="processurl?source=link1">sysDate</a>  &nbsp;&nbsp;&nbsp;  <a href="processurl?source=link2">sysProps</a>
+</form>
+  <script language="JavaScript" >
+           function send(cap){
+               alert(cap);
+               if(cap=="plus"){
+                  frm.source.value="add";
+                  
+                  }
+                else if(cap=="minus")
+                    frm.source.value="sub";
+                 else if(cap=="multiply")
+                     frm.source.value="mul";
+                  else  if(cap=="div")
+                      frm.source.value="div";
+                      
+                      alert(frm.source.value);
+                      //submit the request
+                      frm.submit();
+           }
+  </script>

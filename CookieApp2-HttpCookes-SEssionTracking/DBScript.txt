@@ -1,0 +1,2 @@
+SQL> create table  cookies_Person(pid number(5) primary key,pname varchar2(20),pfname varchar2(20),age number(5),income number(10),tax number(10));
+SQL> create sequence pno_seq start with 1 increment by 1;

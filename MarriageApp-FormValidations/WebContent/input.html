@@ -1,0 +1,17 @@
+
+<h1 style="color:red;text-align:center">Html to Servlet Using Forms</h1>
+
+<form action="marriageurl"  method="POST"  onsubmit="return validate(this)">
+     Person name ::  <input type="text" name="pname"><span id="nameErr"  style="color:red"></span> <br>
+     Person age ::  <input type="password" name="page"><span id="ageErr" style="color:red"></span><br>
+     Gender :: <input type="radio" name="gen"  value="M">Male &nbsp;&nbsp;
+                       <input type="radio" name="gen"  value="F" checked>FeMale  <br>
+        <input type="hidden"  name="vflag"  value="no"/>                       
+     <input type="submit" value="check Marriage Elgibility">
+</form>
+ <script language="JavaScript"  src="js/validation.js">
+  </script>
+  <br><br>
+  
+  <a href="marriageurl"> Get SystemDate</a>
+  
